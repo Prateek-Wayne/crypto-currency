@@ -8,7 +8,6 @@ Welcome to the Crypto-Currency Tracker repository. This project is designed to p
 </div>
 <div style={{ display:"flex" }} >
 <img width="500" height="300" alt="image" src="https://github.com/Prateek-Wayne/crypto-currency/assets/114328592/a7c334ce-3dec-4291-9c01-db5e4906bcb3">
-
 <img width="500" height="300"  alt="image" src="https://github.com/Prateek-Wayne/crypto-currency/assets/114328592/ba3c6ec6-03e0-4642-8df5-30e800970e15">
 
 </div>
