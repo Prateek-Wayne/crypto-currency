@@ -1,0 +1,17 @@
+.homepage{
+   height:100%;
+   align-items: center;
+   margin:20px;
+}
+.content{
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
