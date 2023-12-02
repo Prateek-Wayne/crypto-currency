@@ -11,7 +11,7 @@ import News from '../News/News';
 
 const HomePage = () => {
   const { isLoading, isError, isFetching, isSuccess, data } = useGetCryptosQuery(10)
-  console.log(data?.data?.stats);
+  // console.log(data?.data?.stats);
 
   return (
     <div className='homepage'>
