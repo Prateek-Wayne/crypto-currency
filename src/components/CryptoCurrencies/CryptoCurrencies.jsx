@@ -18,7 +18,7 @@ const CryptoCurrencies = ({ simplified }) => {
   useEffect(()=>{
     const filteredData=data?.data?.coins.filter((coin)=>coin.name.toLowerCase().includes(searchTerm.toLowerCase()));
     setCryptos(filteredData);
-  },[cryptos,searchTerm]);
+  },[searchTerm]);
   
   return (
     <div className='data'>
@@ -42,7 +42,7 @@ const CryptoCurrencies = ({ simplified }) => {
                 <Typography variant='body2'>DailyExchange : {millify(coin?.change)}</Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href={coin?.coinrankingUrl}>Learn More</Button>
+                <Button size="small" href={`/crypto/${coin.uuid}`}>Learn More</Button>
               </CardActions>
             </Card>
           </Grid>

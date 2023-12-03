@@ -18,8 +18,20 @@ export const cryptoApi= createApi({
     endpoints:(builder)=>({
         getCryptos: builder.query({  
             query:(count)=>createRequests(`/coins?limit=${count}`)
-        })
+        }),
+        getCrypto:builder.query({
+            query:(params)=>createRequests(`/coin/${params}`)
+        }), 
+        getHistory: builder.query({
+            query: (coinId) => {
+              console.log("🚀 ~ file: cryptoApi.js:27 ~ coinId:", coinId.id)
+              console.log("🚀 ~ file: cryptoApi.js:27 ~ time:",coinId.time)
+              
+              return createRequests(`/coin/${coinId.id}/history?timePeriod=${coinId.time}`);
+            }
+          })
     })
 });
 
-export const { useGetCryptosQuery } = cryptoApi;
+export const { useGetCryptosQuery,useGetCryptoQuery,useGetHistoryQuery } = cryptoApi;
+// https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd/history

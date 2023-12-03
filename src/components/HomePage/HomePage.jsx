@@ -59,7 +59,7 @@ const HomePage = () => {
       <Typography variant='h4'>Latest News...</Typography>
       <Link to='/news'> <Typography variant='h4'  >Show More ...</Typography></Link>
     </div>
-      <News/>
+      <News simplified/>
     </div>
     </div>
   )

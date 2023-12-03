@@ -6,6 +6,7 @@ import CryptoCurrencies from './components/CryptoCurrencies/CryptoCurrencies';
 import CryptoExchanges from './components/Exchanges/CryptoExchanges';
 import News from './components/News/News'
 import './App.css';
+import CryptoDetails from './components/CryptoDetails/CryptoDetails';
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
           <Route path='/cryptocurrencies' element={<CryptoCurrencies/>} />
         </Routes>
         <Routes>
-          <Route path='/cryptocurrencies/:id' element={<CryptoExchanges/>} />
+          <Route path='/crypto/:id' element={<CryptoDetails/>} />
         </Routes>
         <Routes>
           <Route path='/news' element={<News/>} />
