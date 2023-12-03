@@ -1,21 +1,19 @@
-.conatiner{
-    border: 1px solid black;
-    margin-left: 32px;
-    margin-right: 30px;
-    min-height: 100px;
-    height: 100%;
+.conatiner {
+  border: 1px solid black;
+  margin-left: 32px;
+  margin-right: 30px;
+  min-height: 100px;
+  height: 100%;
 }
-.grid{
-    margin-top: 10px;
-    margin-left: 100px;
-    align-items: center;
-    
+.grid {
+  margin-top: 10px;
+  margin-left: 100px;
+  align-items: center;
 }
-.heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:5px;
-
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
 }

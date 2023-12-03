@@ -1,17 +1,26 @@
-import { AppBar, Button, Drawer, IconButton, List, ListItem, Toolbar, Typography } from '@mui/material'
-import React, { useState } from 'react'
-import './Navbar.css'
-import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
-import NewspaperIcon from '@mui/icons-material/Newspaper';
-import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
-import { Link } from 'react-router-dom';
+import {
+  AppBar,
+  Button,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import React, { useState } from "react";
+import "./Navbar.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
+import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
+import EngineeringOutlinedIcon from "@mui/icons-material/EngineeringOutlined";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='navbar'>
+    <div className="navbar">
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -28,36 +37,38 @@ const NavBar = () => {
             CryptoCurency Tracker
           </Typography>
           {/* <Button color="inherit">Login</Button> */}
-          <Typography variant='body1'>Made with ⚡ by Prateek Verma</Typography>
+          <Typography variant="body1">Made with ⚡ by Prateek Verma</Typography>
         </Toolbar>
       </AppBar>
-      <Drawer anchor={'left'} open={open} onClose={() => setOpen(false)}>
-        <div className='sidebar'>
+      <Drawer anchor={"left"} open={open} onClose={() => setOpen(false)}>
+        <div className="sidebar">
           <List>
-            <ListItem >
-              <div className='icons'>
-                <Link to='/'  >
+            <ListItem>
+              <div className="icons">
+                <Link to="/">
                   <Button>
                     <HomeIcon />
-                    <Typography style={{ margin: '10px' }}>Home</Typography>
+                    <Typography style={{ margin: "10px" }}>Home</Typography>
                   </Button>
                 </Link>
-                <Link to='/cryptocurrencies'>
+                <Link to="/cryptocurrencies">
                   <Button>
                     <CurrencyBitcoinIcon />
-                    <Typography style={{ margin: '10px' }}>Crypto Currency</Typography>
+                    <Typography style={{ margin: "10px" }}>
+                      Crypto Currency
+                    </Typography>
                   </Button>
                 </Link>
-                <Link to='/news'>
+                <Link to="/news">
                   <Button>
                     <NewspaperIcon />
-                    <Typography style={{ margin: '10px' }}>News</Typography>
+                    <Typography style={{ margin: "10px" }}>News</Typography>
                   </Button>
                 </Link>
-                <Link to='/aboutme'>
+                <Link to="/aboutme">
                   <Button>
                     <EngineeringOutlinedIcon />
-                    <Typography style={{ margin: '10px' }}>About Me</Typography>
+                    <Typography style={{ margin: "10px" }}>About Me</Typography>
                   </Button>
                 </Link>
               </div>
@@ -65,10 +76,8 @@ const NavBar = () => {
           </List>
         </div>
       </Drawer>
-
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
-
+export default NavBar;
