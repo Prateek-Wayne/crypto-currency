@@ -3,10 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage/HomePage';
 import CryptoCurrencies from './components/CryptoCurrencies/CryptoCurrencies';
-import CryptoExchanges from './components/Exchanges/CryptoExchanges';
 import News from './components/News/News'
 import './App.css';
 import CryptoDetails from './components/CryptoDetails/CryptoDetails';
+import AboutMe from './components/AboutMe/AboutMe';
 
 const App = () => {
   return (
@@ -26,6 +26,9 @@ const App = () => {
         </Routes>
         <Routes>
           <Route path='/news' element={<News/>} />
+        </Routes>
+        <Routes>
+          <Route path='/aboutme' element={<AboutMe/>} />
         </Routes>
       </div>
     </div>

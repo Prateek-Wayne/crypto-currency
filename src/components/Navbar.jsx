@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
+import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -48,16 +48,16 @@ const NavBar = () => {
                     <Typography style={{ margin: '10px' }}>Crypto Currency</Typography>
                   </Button>
                 </Link>
-                <Link to='/exchanges'>
-                  <Button>
-                    <CurrencyExchangeIcon />
-                    <Typography style={{ margin: '10px' }}>Exchange</Typography>
-                  </Button>
-                </Link>
                 <Link to='/news'>
                   <Button>
                     <NewspaperIcon />
                     <Typography style={{ margin: '10px' }}>News</Typography>
+                  </Button>
+                </Link>
+                <Link to='/aboutme'>
+                  <Button>
+                    <EngineeringOutlinedIcon />
+                    <Typography style={{ margin: '10px' }}>About Me</Typography>
                   </Button>
                 </Link>
               </div>
