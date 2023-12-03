@@ -6,7 +6,6 @@ import Loading from "../Loading/Loading";
 import Error from "../Loading/Error";
 import millify from "millify";
 import CryptoCurrencies from "../CryptoCurrencies/CryptoCurrencies";
-import { Link } from "react-router-dom";
 import News from "../News/News";
 
 const HomePage = () => {
@@ -62,10 +61,7 @@ const HomePage = () => {
       <div className="content">
         <div className="links">
           <Typography variant="h4">Latest News...</Typography>
-          <Link to="/news">
-            {" "}
-            <Typography variant="h4">Show More ...</Typography>
-          </Link>
+          <Button href="/news">Show More...</Button>
         </div>
         <News simplified />
       </div>
