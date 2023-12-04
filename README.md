@@ -20,8 +20,8 @@ Welcome to the Crypto-Currency Tracker repository. This project is designed to p
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/Prateek-Wayne/crypto-currency.git`
 2. Navigate to the project directory: `cd crypto-currency`
-3. Install the necessary dependencies (these will be listed in a `requirements.txt` file)
-4. Run the application: `python main.py`
+3. Install the necessary dependencies (these will be listed in a `package.json` file) using `yarn install` or `npm install`
+4. Run the application: `yarn start` or `npm start`
 
 ## Contributing
 We welcome contributions from the community. Please read our contributing guidelines before submitting any changes.
