@@ -1,5 +1,5 @@
 # Crypto-Currency Tracker
-### `Deployed Here`: [Crypto-currency-tracker](https://crypto-tracker-0nk0.onrender.com/)
+### `Deployed Here`: [Crypto-currency-tracker](https://crypto-currency-3gts.vercel.app/)
 
 ## Introduction
 Welcome to the Crypto-Currency Tracker repository. This project is designed to provide real-time tracking and analysis of various cryptocurrencies.
